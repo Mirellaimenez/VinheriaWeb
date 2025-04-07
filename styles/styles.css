@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fefefe;
+    color: #1c1c1c;
+  }
+  
+  .header {
+    background-color: #003d29;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .top-nav {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3rem;
+    
+  }
+  
+  .top-nav nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+    justify-content:center;  
+    flex-wrap: wrap; 
+  }
+  
+  
+  .cart {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+  }
+  
+  .cart input {
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .procurados {
+    background-color: #004d35;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .procurados h2 {
+    background-color: #6b0015;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  .produtos {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  
+  .produto {
+    background-color: white;
+    color: #333;
+    padding: 1rem;
+    border-radius: 10px;
+    min-width: 180px;
+    flex: none;
+  }
+  
+  .produto img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .quantidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .quantidade button {
+    background-color: #006b4e;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .quantidade input {
+    width: 40px;
+    text-align: center;
+  }
+  
+  .preco {
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+  
+  .vinheria {
+    background-color: #f8f3ef;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .vinheria h3 {
+    color: #01472f;
+  }
+  
+  .vinheria h4 {
+    color: #8a9e83;
+    margin-bottom: 2rem;
+  }
+  
+  .uvas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+  
+  .uva img {
+    width: 100%;
+    height: auto;
+    align-items: stretch;
+
+  }
+  
+  .botoes {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .degustacao, .nossos-vinhos {
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .degustacao {
+    background-color: #480e1b;
+    color: white;
+  }
+  
+  .nossos-vinhos {
+    background-color: #9abda6;
+    color: white;
+  }
+  
+  .qualidade {
+    background-color: #003d29;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background-color: #01472f;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 250px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .footer {
+    background-color: #00261b;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .footer-menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .footer-info p, .footer-social span {
+    margin: 0.3rem 0;
+  }
+  
