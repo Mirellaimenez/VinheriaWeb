@@ -1,207 +1,384 @@
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #fefefe;
-    color: #1c1c1c;
-  }
-  
-  .header {
-    background-color: #003d29;
-    color: white;
-    padding: 1rem;
-  }
-  
-  .top-nav {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.3rem;
-    
-  }
-  
-  .top-nav nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
-    padding: 0;
-    margin: 0;
-    justify-content:center;  
-    flex-wrap: wrap; 
-  }
-  
-  
-  .cart {
-    display: flex;
-    justify-content: end;
-    gap: 0.5rem;
-  }
-  
-  .cart input {
-    padding: 0.4rem 0.6rem;
-    border-radius: 5px;
-    border: none;
-  }
-  
-  .procurados {
-    background-color: #004d35;
-    color: white;
-    padding: 2rem 1rem;
-    text-align: center;
-  }
-  
-  .procurados h2 {
-    background-color: #6b0015;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-  }
-  
-  .produtos {
-    display: flex;
-    overflow-x: auto;
-    gap: 1rem;
-    margin-top: 2rem;
-    padding: 1rem;
-  }
-  
-  .produto {
-    background-color: white;
-    color: #333;
-    padding: 1rem;
-    border-radius: 10px;
-    min-width: 180px;
-    flex: none;
-  }
-  
-  .produto img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .quantidade {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 0.5rem 0;
-  }
-  
-  .quantidade button {
-    background-color: #006b4e;
-    color: white;
-    border: none;
-    padding: 0.3rem 0.6rem;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .quantidade input {
-    width: 40px;
-    text-align: center;
-  }
-  
-  .preco {
-    font-weight: bold;
-    margin-top: 0.5rem;
-  }
-  
-  .vinheria {
-    background-color: #f8f3ef;
-    text-align: center;
-    padding: 3rem 1rem;
-  }
-  
-  .vinheria h3 {
-    color: #01472f;
-  }
-  
-  .vinheria h4 {
-    color: #8a9e83;
-    margin-bottom: 2rem;
-  }
-  
-  .uvas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-  }
-  
-  .uva img {
-    width: 100%;
-    height: auto;
-    align-items: stretch;
+* {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
 
-  }
-  
-  .botoes {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .degustacao, .nossos-vinhos {
-    padding: 0.6rem 1.5rem;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .degustacao {
-    background-color: #480e1b;
-    color: white;
-  }
-  
-  .nossos-vinhos {
-    background-color: #9abda6;
-    color: white;
-  }
-  
-  .qualidade {
-    background-color: #003d29;
-    color: white;
-    text-align: center;
-    padding: 3rem 1rem;
-  }
-  
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-  
-  .card {
-    background-color: #01472f;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 250px;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .footer {
-    background-color: #00261b;
-    color: white;
-    padding: 2rem 1rem;
-    text-align: center;
-  }
-  
-  .footer-menu ul {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1rem 0;
-    flex-wrap: wrap;
-  }
-  
-  .footer-info p, .footer-social span {
-    margin: 0.3rem 0;
-  }
-  
+:root {
+  --green-500: #024125;
+  --green-200: #7da08e;
+  --green-100: #adadad;
+  --green-50: #c8c8c8;
+  --gray-300: #838383;
+  --gray-200: #adadad;
+  --burgundy-500: #440d1b;
+  --brown-300: #49373b;
+  --gold-300: #d3ad7f;
+  --beige-200: #f2e8e0;
+  --white-200: #fefefe;
+  --black-200: #1c1c1c;
+  --black-100: #49373c;
+}
+
+body {
+  background-color: var(--white-200);
+  color: var(--black-200);
+}
+
+.header {
+  background-color: var(--green-500);
+  color: white;
+  padding: 1.875rem 3.12rem;
+}
+
+.top-nav {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.3rem;
+}
+
+.top-nav nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-nav nav ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-nav nav ul > li {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.logo-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-center > span:first-child,
+.logo-center > span:last-child {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.logo-center > .agnello {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cart {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+.carticon {
+  width: 35px;
+}
+
+.cart input {
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  border: none;
+}
+
+section {
+  padding: 1.875rem 3.12rem;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search input {
+  padding: 15px 20px;
+  width: 20rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.most-popular {
+  background-color: var(--green-500);
+  padding: 3rem 10rem;
+  color: white;
+}
+
+.most-popular h2 {
+  background-color: var(--burgundy-500);
+  display: inline-block;
+  padding: 0.7rem 13rem 0.7rem 1rem;
+  border-radius: 5px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.product {
+  color: #333;
+  min-width: 180px;
+  text-align: center;
+}
+
+.product .content {
+  background-color: var(--beige-200);
+  width: 16.8rem;
+  height: 20.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.product .title {
+  padding: 0 30px;
+  flex-wrap: wrap;
+  color: var(--black-100);
+  font-size: 12px;
+}
+
+.product .divider {
+  border-top: 1px solid var(--green-50);
+}
+
+.product .country {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 10px;
+}
+
+.product .flag {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.product .card-price {
+  background-color: var(--green-200);
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.quantidade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.quantidade button {
+  background-color: #006b4e;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quantidade input {
+  width: 40px;
+  text-align: center;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.winery {
+  background-color: #f8f3ef;
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #01472f;
+}
+
+.winery h3,
+.winery h4 {
+  font-size: 28px;
+}
+
+.winery h4 {
+  color: #8a9e83;
+  margin-bottom: 2rem;
+}
+
+.grapes {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.grape {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.grape img {
+  height: 325px;
+}
+
+.grape h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.grape p {
+  width: 18.5rem;
+  text-align: justify;
+  font-weight: normal;
+}
+
+.botoes {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.degustacao,
+.nossos-vinhos {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.degustacao {
+  background-color: #480e1b;
+  color: white;
+}
+
+.nossos-vinhos {
+  background-color: #9abda6;
+  color: white;
+}
+
+.quality {
+  background-color: var(--green-500);
+  padding: 5rem 0;
+
+  color: white;
+  text-align: center;
+}
+
+.quality h3,
+.quality h4 {
+  font-size: 24px;
+}
+
+.quality h4 {
+  margin-bottom: 10px;
+  color: var(--green-200);
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card h5 {
+  max-width: 80%;
+}
+
+.card p {
+  width: 25rem;
+
+  font-size: 14px;
+  font-weight: normal;
+  text-align: justify;
+}
+
+.divider-footer {
+  margin-bottom: 30px;
+  border-top: 1px solid var(--gray-200);
+}
+
+.footer {
+  background-color: var(--green-500);
+  padding: 1.875rem 3.12rem 4rem;
+
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-menu ul {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.footer-nav {
+  flex: 1.5;
+}
+
+.footer-info p {
+  color: var(--green-50);
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.footer-social {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-social .social-media {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: var(--gold-300);
+}

@@ -1,155 +1,288 @@
 <!DOCTYPE html>
 <html lang="t-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="pricennect" href="https://fonts.googleapis.com" />
+    <link rel="pricennect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Vinheria Agnello</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="top-nav">
-          <nav>
-            <ul>
-              <li>Categorias</li>
-              <li>Kits Degustação</li>
-              <li>Fidelidade</li>
-              <div>VINHERIA AGNELLO</div>
-              <li>Consultoria</li>
-              <li>Lojas Físicas</li>
-              <li>Quem Somos</li>
-            </ul>
-          </nav>
-        
-          <div class="cart">
-            <input type="text" placeholder="Buscar produto">
-            <span class="carticon">🛒</span>
-          </div>
-        </div>
-      </header>
-    
-      <main>
-        <section class="procurados">
-          <h2>Mais Procurados</h2>
-          <div class="produtos">
-            <div class="produto">
-              <img src="" alt="Espumante">
-              <p>Espumante Veuve D'Argent Branco Demi-Sec</p>
-              <p>França</p>
-              <p>Espumante, Meio Seco</p>
-            
-              <p class="preco">R$ 326,90</p>
-            </div>
-            <div class="produto">
-              <img src="" alt="Erme Matthe">
-              <p>Erme Matthe 2024</p>
-              <p>Argentina</p>
-              <p>Tinto, Seco</p>
-              <p class="preco">R$ 231,90</p>
-            </div>
-            <div class="produto">
-              <img src="" alt="8 Rios D.O. Região do Valle">
-              <p>8 Rios D.O. Região do Valle Central Carmenére 2023</p>
-              <p>Chile</p>
-              <p>Tinto, Seco</p>
-              <p class="preco">R$ 231,90</p>
-            </div>
-            <div class="produto">
-              <img src="" alt="Sardell D.O.C.G. Chianti">
-              <p>Sardell D.O.C.G. Chianti 2023</p>
-              <p>Itália</p>
-              <p>Tinto, Seco</p>
-              <p class="preco">R$ 423,90</p>
-            </div>
-            <div class="produto">
-              <img src="" alt="Ca de Piaggi Rosso">
-              <p>Ca de Piaggi Rosso</p>
-              <p>Itália</p>
-              <p>Tinto, Seco</p>
-              <p class="preco">R$ 106,90</p>
-            </div>
-          </div>
-        </section>
-    
-        <section class="vinheria">
-          <h3>RARAS E EXCEPCIONAIS: CONHEÇA NOSSA SELEÇÃO PREMIUM</h3>
-          <h4>DE UVAS MAIS REQUINTADAS DO MUNDO DO VINHO</h4>
-          <div class="uvas">
-            <div class="uva">
-              <img src="img/uva1.png" alt="Cabernet Sauvignon">
-              <h5>Cabernet Sauvignon</h5>
-              <p>Uva Tinta</p>
-              <p>Famosa por seu potencial de envelhecimento e seu sabor robusto...</p>
-            </div>
-            <div class="uva">
-              <img src="img/uva2.png" alt="Chardonnay">
-              <h5>Chardonnay</h5>
-              <p>Uvas Brancas</p>
-              <p>Uma das mais famosas e cultivadas no mundo...</p>
-            </div>
-            <div class="uva">
-              <img src="img/uva3.png" alt="Sauvignon Blanc">
-              <h5>Sauvignon Blanc</h5>
-              <p>Uvas Verdes</p>
-              <p>Conhecida por seus vinhos refrescantes e aromáticos...</p>
-            </div>
-            <div class="uva">
-              <img src="img/uva4.png" alt="Pinot Noir">
-              <h5>Pinot Noir</h5>
-              <p>Uva Tinta</p>
-              <p>Com aromas de frutas vermelhas e notas florais...</p>
-            </div>
-          </div>
-          <div class="botoes">
-            <button class="degustacao">Degustação</button>
-            <button class="nossos-vinhos">Nossos Vinhos</button>
-          </div>
-        </section>
-    
-        <section class="qualidade">
-          <h3>COM MAIS DE 15 ANOS DE DEDICAÇÃO DE QUALIDADE</h3>
-          <h4>SEGUIMOS CRIANDO HISTÓRIA</h4>
-          <div class="cards">
-            <div class="card">
-              <img src="" alt="Nossas Lojas">
-              <h5>CONHEÇA NOSSAS LOJAS</h5>
-              <p>Espaços acolhedores com atendimento personalizado...</p>
-            </div>
-            <div class="card">
-              <img src="" alt="Nossas Vinícolas">
-              <h5>VISITE NOSSAS VINÍCOLAS</h5>
-              <p>Explore paisagens deslumbrantes e descubra como produzimos nossos vinhos...</p>
-            </div>
-            <div class="card">
-              <img src="" alt="Vinho para cada ocasião">
-              <h5>ENCONTRE O VINHO PERFEITO PARA CADA OCASIÃO</h5>
-              <p>Desde celebrações especiais até momentos íntimos, temos o vinho ideal para você...</p>
-            </div>
-          </div>
-        </section>
-      </main>
-    
-      <footer class="footer">5
-        <div class="footer-menu">
+      <div class="top-nav">
+        <nav>
+          <img src="./svg/menu.svg" alt="Menu" />
           <ul>
             <li>Categorias</li>
             <li>Kits Degustação</li>
             <li>Fidelidade</li>
+            <div class="logo-center">
+              <span>VINHERIA</span>
+              <span class="agnello">AGNELLO</span>
+              <span>DESDE 2010</span>
+            </div>
             <li>Consultoria</li>
             <li>Lojas Físicas</li>
             <li>Quem Somos</li>
           </ul>
+          <div class="cart">
+            <img src="./svg/cart.svg" class="carticon" alt="Carrinho" />
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="most-popular">
+        <div class="search">
+          <input type="text" placeholder="Buscar produto" />
         </div>
-        <div class="footer-info">
-          <p>© 2025 Vinheria Agnello - Todos os direitos reservados</p>
-          <p>Contato: atendimento@vinheriaagnello.com</p>
+        <h2>Mais Procurados</h2>
+        <div class="products">
+          <div class="product">
+            <div class="content">
+              <p class="title">Espumante Veuve D'Argent Branco Demi-Sec</p>
+              <div>
+                <img src="./img/wine.png" alt="Espumante" />
+              </div>
+              <div class="divider"></div>
+              <div class="country">
+                <div class="flag">
+                  <img src="./svg/french.svg" alt="França" />
+                  <p>França</p>
+                </div>
+                <p>Espumante</p>
+                <p>Meio Seco</p>
+              </div>
+            </div>
+            <div class="card-price">
+              <p class="price">R$ 326,90</p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="content">
+              <p class="title">Erme Matthe 2024</p>
+              <div>
+                <img src="./img/wine.png" alt="Erme Matthe" />
+              </div>
+              <div class="divider"></div>
+              <div class="country">
+                <div class="flag">
+                  <img src="./svg/arg.svg" alt="Argentina" />
+                  <p>Argentina</p>
+                </div>
+                <p>Tinto</p>
+                <p>Seco</p>
+              </div>
+            </div>
+            <div class="card-price">
+              <p class="price">R$ 231,90</p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="content">
+              <p class="title">
+                8 Rios D.O. Região do Valle Central Carmenére 2023
+              </p>
+              <div>
+                <img src="./img/wine.png" alt="8 Rios D.O. Região do Valle" />
+              </div>
+              <div class="divider"></div>
+              <div class="country">
+                <div class="flag">
+                  <img src="./svg/chile.svg" alt="Chile" />
+                  <p>Chile</p>
+                </div>
+                <p>Tinto</p>
+                <p>Seco</p>
+              </div>
+            </div>
+            <div class="card-price">
+              <p class="price">R$ 231,90</p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="content">
+              <p class="title">Sardell D.O.C.G. Chianti 2023</p>
+              <div>
+                <img src="./img/wine.png" alt="Sardell D.O.C.G. Chianti" />
+              </div>
+              <div class="divider"></div>
+              <div class="country">
+                <div class="flag">
+                  <img src="./svg/italy.svg" alt="Itália" />
+                  <p>Itália</p>
+                </div>
+                <p>Tinto</p>
+                <p>Seco</p>
+              </div>
+            </div>
+            <div class="card-price">
+              <p class="price">R$ 423,90</p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="content">
+              <p class="title">Ca de Piaggi Rosso</p>
+              <div>
+                <img src="./img/wine.png" alt="Ca de Piaggi Rosso" />
+              </div>
+              <div class="divider"></div>
+              <div class="country">
+                <div class="flag">
+                  <img src="./svg/italy.svg" alt="Itália" />
+                  <p>Itália</p>
+                </div>
+                <p>Tinto</p>
+                <p>Seco</p>
+              </div>
+            </div>
+            <div class="card-price">
+              <p class="price">R$ 106,90</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="winery">
+        <p>VINHERIA</p>
+        <h3>RARAS E EXCEPCIONAIS: CONHEÇA NOSSA SELEÇÃO PREMIUM</h3>
+        <h4>DE UVAS MAIS REQUINTADAS DO MUNDO DO VINHO</h4>
+        <div class="grapes">
+          <div class="grape">
+            <img src="img/uva1.png" alt="Cabernet Sauvignon" />
+            <h5>Cabernet Sauvignon</h5>
+            <h5>Uva Tinta</h5>
+            <p>
+              Famosa por seu potencial de envelhecimento e seu sabor robusto. Os
+              vinhos feitos dessa uva são intensos, com notas de frutas escuras,
+              como cassis, além de toques de especiarias e carvalho. É a estrela
+              de vinhos premium de Bordeaux e de várias outras regiões
+              vitivinícolas ao redor do mundo.
+            </p>
+          </div>
+          <div class="grape">
+            <img src="img/uva2.png" alt="Chardonnay" />
+            <h5>Chardonnay</h5>
+            <h5>Uvas Brancas</h5>
+            <p>
+              Uma das mais famosas e cultivadas no mundo. Com seu perfil
+              versátil, ela pode produzir vinhos frescos e frutados ou mais
+              encorpados e complexos, com notas de maçã, pêssego e até toques
+              amanteigados. É a base para alguns dos melhores champagnes e
+              vinhos brancos da Borgonha, França.
+            </p>
+          </div>
+          <div class="grape">
+            <img src="img/uva3.png" alt="Sauvignon Blanc" />
+            <h5>Sauvignon Blanc</h5>
+            <h5>Uvas Verdes</h5>
+            <p>
+              Conhecida por seus vinhos refrescantes e aromáticos. Com aromas de
+              frutas cítricas, ervas frescas e maracujá, a Sauvignon Blanc é uma
+              escolha popular para vinhos brancos leves e crocantes,
+              especialmente das regiões de Bordeaux e Marlborough, na Nova
+              Zelândia.
+            </p>
+          </div>
+          <div class="grape">
+            <img src="img/uva4.png" alt="Pinot Noir" />
+            <h5>Pinot Noir</h5>
+            <h5>Uva Tinta</h5>
+            <p>
+              Com aromas de frutas vermelhas, como framboesa, e morango, e notas
+              terrosas, os vinhos de Pinot Noir são elegantes, suaves. Sua uva é
+              uma das mais difíceis de cultivar, mas seus vinhos são altamente
+              valorizados pela delicadeza e complexidade.É uma das principais
+              variedades de uvas usadas na produção de vinhos da Borgonha,
+              França.
+            </p>
+          </div>
+        </div>
+        <div class="botoes">
+          <button class="degustacao">Degustação</button>
+          <button class="nossos-vinhos">Nossos Vinhos</button>
+        </div>
+      </section>
+
+      <section class="quality">
+        <h3>COM MAIS DE 15 ANOS DE DEDICAÇÃO DE QUALIDADE</h3>
+        <h4>SEGUIMOS CRIANDO HISTÓRIA</h4>
+        <div class="cards">
+          <div class="card">
+            <img src="./img/stores.png" alt="Nossas Lojas" />
+            <h5>CONHEÇA NOSSAS LOJAS</h5>
+            <p>
+              Explore nossas lojas e mergulhe no mundo dos vinhos com a
+              orientação de especialistas. Aqui, você encontrará uma seleção
+              exclusiva e poderá vivenciar um atendimento personalizado para
+              cada necessidade.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./img/winary.png" alt="Nossas Vinícolas" />
+            <h5>VISITE NOSSAS VINÍCOLAS</h5>
+            <p>
+              Venha conhecer de perto o processo de produção dos nossos vinhos.
+              Nossas vinícolas são um convite à imersão na tradição e no cuidado
+              que colocamos em cada garrafa. Uma experiência que conecta sabor e
+              história.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./img/dinner.png" alt="Vinho para cada ocasião" />
+            <h5>ENCONTRE O VINHO PERFEITO PARA CADA OCASIÃO</h5>
+            <p>
+              Cada momento merece o vinho ideal. Com nossa curadoria
+              especializada, você vai encontrar a opção perfeita, seja para um
+              jantar sofisticado, uma celebração especial ou uma simples noite
+              de relaxamento.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="divider-footer"></div>
+      <div class="footer-content">
+        <div class="footer-nav">
+          <div class="footer-menu">
+            <ul>
+              <li>Categorias</li>
+              <li>Kits Degustação</li>
+              <li>Fidelidade</li>
+              <li>Consultoria</li>
+              <li>Lojas Físicas</li>
+              <li>Quem Somos</li>
+            </ul>
+            <div class="footer-info">
+              <p>
+                ©2025 VINHERIA AGNELLO | ALL RIGTHS RESERVED - FIAP ENGINEERS
+              </p>
+            </div>
+          </div>
         </div>
         <div class="footer-social">
-          <span>Instagram</span>
-          <span>Facebook</span>
+          <div class="social-media">
+            <img src="./svg/insta.svg" alt="Instagram" />
+            <span>Instagram</span>
+          </div>
+          <div class="social-media">
+            <img src="./svg/face.svg" alt="Facebook" />
+            <span>Facebook</span>
+          </div>
+          <div class="social-media">
+            <img src="./svg/whats.svg" alt="WhatsApp" />
+            <span>WhatsApp</span>
+          </div>
         </div>
-      </footer>
-      
-    
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
