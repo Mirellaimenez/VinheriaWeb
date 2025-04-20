@@ -231,6 +231,7 @@ section {
 .grapes {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -302,7 +303,6 @@ section {
 .cards {
   display: flex;
   width: 100%;
-  align-items: center;
   justify-content: space-evenly;
 }
 
@@ -317,8 +317,8 @@ section {
   font-weight: bold;
 }
 
-.card h5 {
-  max-width: 80%;
+.card > h5 {
+  width: 15rem;
 }
 
 .card p {
@@ -394,7 +394,7 @@ section {
   }
 
   .product {
-    max-width: 20rem;
+    max-width: 18rem;
   }
 
   .top-nav nav ul > li {
@@ -419,6 +419,19 @@ section {
     width: 15px;
   }
 
+  .most-popular h2 {
+    font-size: 20px;
+  }
+
+  .cards > .card > img {
+    width: 23rem;
+    height: 13rem;
+  }
+
+  .cards > .card > p {
+    width: 20rem;
+  }
+
   .footer-menu ul li {
     font-size: 12px;
   }
@@ -429,12 +442,31 @@ section {
 }
 
 @media (max-width: 1200px) {
-  .products {
-    flex-wrap: wrap;
+  .product {
+    max-width: 15rem;
   }
 
-  .product {
-    flex: 1;
+  .winery h3,
+  .winery h4 {
+    font-size: 20px;
+  }
+
+  .cards > .card > img {
+    width: 18rem;
+    height: 10rem;
+  }
+
+  .cards > .card > p {
+    width: 15rem;
+  }
+
+  .grape img {
+    height: 15.5rem;
+    width: 13.75rem;
+  }
+
+  .grape p {
+    width: 13.5rem;
   }
 }
 
@@ -443,13 +475,180 @@ section {
     display: none;
   }
 
+  .top-nav nav ul li.logo-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-center > .agnello {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .logo-center > span:first-child,
+  .logo-center > span:last-child {
+    font-size: 12px;
+  }
+
+  .search input {
+    padding: 10px 15px;
+  }
+
+  .most-popular h2 {
+    padding: 10px 7rem 10px 1rem;
+    font-size: 18px;
+  }
+
+  .product > .content {
+    height: 15rem;
+  }
+
+  .product > .content > .title {
+    padding: 0;
+  }
+
+  .content .wine-img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .content .wine-img > img {
+    width: 7rem;
+  }
+
+  .cards > .card > img {
+    width: 18rem;
+    height: 10rem;
+  }
+
+  .cards > .card > p {
+    width: 15rem;
+  }
+
+  .card-price > .price {
+    font-size: 18px;
+  }
+
+  .grape > p {
+    font-size: 14px;
+  }
+
+  .quality h3,
+  .quality h4 {
+    font-size: 20px;
+  }
+
   .footer-menu ul {
     display: none;
   }
 }
 
+@media (max-width: 1055px) {
+  .product {
+    max-width: 13rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .most-popular {
+    padding: 2rem 5rem;
+  }
+
+  .grapes {
+    gap: 5px;
+  }
+
+  .grape {
+    min-width: 20rem;
+    align-items: center;
+  }
+}
+
 @media (max-width: 887px) {
+  .cards > .card > img {
+    width: 13rem;
+    height: 7rem;
+  }
+
+  .cards > .card > h5 {
+    font-size: 14px;
+  }
+
+  .cards > .card > p {
+    font-size: 12px;
+  }
+
   .footer-social .social-media span {
     display: none;
+  }
+}
+
+@media (max-width: 790px) {
+  .search {
+    margin-bottom: 20px;
+  }
+
+  .search input {
+    padding: 10px 15px;
+    width: 100%;
+  }
+
+  .search > h2 {
+    font-size: 14px;
+  }
+
+  .most-popular {
+    padding: 3rem 1rem;
+  }
+
+  .most-popular h2 {
+    padding: 15px;
+    width: 10rem;
+  }
+
+  .products {
+    width: 100%;
+  }
+
+  .product {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .grapes {
+    gap: 15px;
+  }
+
+  .grape {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .grape img {
+    width: 10rem;
+    height: 12rem;
+  }
+
+  .grape > h5 {
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .grape > p {
+    font-size: 12px;
+  }
+
+  .winery h3,
+  .winery h4,
+  .quality h3,
+  .quality h4 {
+    font-size: 16px;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    gap: 15px;
   }
 }
